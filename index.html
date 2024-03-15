@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 2</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Javascript Web Output #2</h1>
+    <table id="tblInput">
+        <tr>
+            <td width="45%">
+                <label for="txtFname">First Name:</label>
+            </td>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="">Middle Name:</label>
+            </td>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="">Last Name:</label>
+            </td>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="">Age:</label>
+            </td>
+            <td>
+                <input type="number">
+            </td>
+        </tr>
+
+        <tr style="height:20px;">
+            <td>
+ 
+            </td>
+            <td style="padding-top: 15px;">
+                <button id="btnInsertUpdate" value="insert">Insert</button>
+                <button id="btnClear">Clear</button>
+            </td>
+        </tr>
+    </table>
+    <br>
+
+    <fieldset>
+        <legend>Records</legend>
+        <p id="status" style="color:red; font-size: 12px;"></p>
+        <table id="tblRecords" style="border-collapse: collapse; margin: auto;">
+        </table>
+    </fieldset>
+    <button id="btnClearItems" style="margin-top: 10px;">Clear Records</button>
+
+    <label for="sortCriteriaSelect">Sort by:</label>
+    <select id="sortCriteriaSelect">
+        <option value="firstName">First Name</option>
+        <option value="lastName">Last Name</option>
+    </select>
+
+    <label for="sortOrderSelect">Sort order:</label>
+    <select id="sortOrderSelect">
+        <option value="asc">A-Z</option>
+        <option value="desc">Z-A</option>
+    </select>
+
+    <button id="btnSaveToLocal" style="margin-left: 10px;">Save to Local Storage</button>
+
+    <script src="main.js"></script>
+</body>
+</html>
